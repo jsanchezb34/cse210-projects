@@ -8,4 +8,16 @@ public class Entry
     public string Prompt;
     public string UserEntry;
 
+    public Entry(string Prompt, string UserEntry)
+    {
+        Date = Date;
+        Prompt = Prompt;
+        UserEntry = UserEntry;
+    }
+
+    public override string ToString()
+    {
+        return $"{Date}\n{Prompt}\n{UserEntry}\n";
+    }
+
 }

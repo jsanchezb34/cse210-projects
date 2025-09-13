@@ -4,6 +4,7 @@ using System.Collections.Generic;
 public class PromptGenerator
 {
     private static readonly List<string> prompts = new List<string>
+    
     {
         "What made you smile today?",
         "Describe a conversation you had with someone.",
