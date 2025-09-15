@@ -10,9 +10,9 @@ public class Entry
 
     public Entry(string Prompt, string UserEntry)
     {
-        Date = Date;
-        Prompt = Prompt;
-        UserEntry = UserEntry;
+        this.Date = Date;
+        this.Prompt = Prompt;
+        thisUserEntry = UserEntry;
     }
 
     public override string ToString()
