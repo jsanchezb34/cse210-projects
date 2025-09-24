@@ -1,23 +1,20 @@
-using System.Security.Cryptography.X509Certificates;
-
-//--------------------------------------------------------------------------------------
 
 public class Entry
 {
-    public string Date;
-    public string Prompt;
-    public string UserEntry;
+    private string _date;
+    private string _prompt;
+    private string _userEntry;
 
-    public Entry(string Prompt, string UserEntry)
+    public Entry(string prompt, string userEntry)
     {
-        this.Date = Date;
-        this.Prompt = Prompt;
-        thisUserEntry = UserEntry;
+        _date = DateTime.Now.ToString("MM/dd/yyyy");
+        _prompt =prompt;
+        _userEntry = userEntry;
     }
 
     public override string ToString()
     {
-        return $"{Date}\n{Prompt}\n{UserEntry}\n";
+        return $"{_date}\n{_prompt}\n{_userEntry}\n";
     }
 
 }
