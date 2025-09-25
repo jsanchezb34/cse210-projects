@@ -48,8 +48,12 @@ class Program
 
                 PromptGenerator generator = new PromptGenerator();
                 Console.WriteLine(generator.GetRandomPrompts());
+
                 Console.Write("Your response: \n");
                 string userEntry = Console.ReadLine();
+                Entry entry = new Entry(generator.GetRandomPrompts(), userEntry);
+                journal.AddEntry(entry);
+
                 Console.WriteLine("what else would you like to do?\n");
                 Menu();
                 Console.Write("Enter number: ");
