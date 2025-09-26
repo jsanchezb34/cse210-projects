@@ -9,4 +9,15 @@ public class Comment
         _Name = name;
         _Text = text;
     }
+
+    public string GetName()
+    {
+        return _Name;
+    }
+
+    public string GetText()
+    {
+        return _Text;
+    }
+
 }

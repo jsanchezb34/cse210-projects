@@ -1,7 +1,7 @@
 
 public class Video
 {
-    private string _title;
+    private string _title
     private string _author;
     private int _lengthInSeconds;
     List<Comment> _comment = new List<Comment>();
@@ -27,5 +27,8 @@ public class Video
     {
         return _comment.Count;
     }
-
+    public List<Comment> GetComments ()
+    {
+       return _comment;
+    }
 }
