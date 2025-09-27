@@ -1,4 +1,3 @@
-
 public class Comment
 {
     private string _Name;
