@@ -1,4 +1,4 @@
- 
+
 public class WritingAssignment : Assignment
 {
     private string _title;
@@ -11,6 +11,7 @@ public class WritingAssignment : Assignment
 
     public string GetWritingInformation()
     {
-        return $"{GetStudentName()} - {GetTopic()}- {_title}";
+        return $"{GetStudentName()} - {GetTopic()}\n{_title} by {GetStudentName()}";
     }
+
 }
