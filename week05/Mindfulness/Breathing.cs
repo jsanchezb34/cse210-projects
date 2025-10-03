@@ -1,20 +1,21 @@
-
-public class Breathing
+public class Breathing : activity
 {
-    public void Inhale()
+    public Breathing() : base("breathing",
+    "This activity will help you relax by walking you through \nbreathing in and out slowly.")
     {
-        System.Console.WriteLine("Inhaling...");
-        Thread.Sleep(1000);
     }
-
-
-
-    public void Exhale()
+    public void Run()
     {
-        // Code to simulate exhaling
-        System.Console.WriteLine("Exhaling...");
-        Thread.Sleep(1000);
+        Start();
+        int elapsed = 0;
+        while (elapsed < _duration)
+        {
+            Console.Write("inhaling");
+            Showspinnner(5);
+            Console.Write("Exhaling");
+            Showspinnner(5);
+            elapsed += 10;
+        }
+        End();
     }
-
-    
 }
