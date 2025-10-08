@@ -15,7 +15,7 @@ public class activity
 
     public void Start()
     {
-        Console.WriteLine($"Starting {_name} Activity");
+        Console.WriteLine($"\nStarting {_name} Activity\n");
         Console.WriteLine(_description);
         Console.WriteLine("How long would you like the excercice to last?: ");
         _duration = int.Parse(Console.ReadLine());
@@ -26,7 +26,7 @@ public class activity
     public void End()
     {
         Console.WriteLine("\nWell  done!!\n");
-        Console.WriteLine($"You just completed {_name} for {_duration} seconds");
+        Console.WriteLine($"You just completed {_name} for {_duration} seconds\n");
     }
 
     protected void Showspinnner(int seconds)

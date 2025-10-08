@@ -1,8 +1,9 @@
 public class Breathing : activity
 {
     public Breathing() : base("breathing",
-    "This activity will help you relax by walking you through \nbreathing in and out slowly.")
+    "\nThis activity will help you relax by walking you through \nbreathing in and out slowly.")
     {
+
     }
     public void Run()
     {
