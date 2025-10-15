@@ -8,13 +8,15 @@ public class Program
         Console.WriteLine("Hello World! This is the ExerciseTracking Project.");
 
         var activities = new List<Activity>();
-        {
-            Running run = new Running(new DateTime(2025, 10, 12), 40, 2.0);
-            Cycling bike = new Cycling(new DateTime(2025, 10, 13), 50, 5.0);
-            Swimming swim = new Swimming(new DateTime(2025, 10, 14), 60, 60);
-        };
+        Running run = new Running(new DateTime(2025, 10, 12), 40, 2.0);
+        Cycling bike = new Cycling(new DateTime(2025, 10, 13), 50, 5.0);
+        Swimming swim = new Swimming(new DateTime(2025, 10, 14), 60, 60);
 
-    
+        activities.Add(run);
+        activities.Add(bike);
+        activities.Add(swim);
+
+
 
         foreach (Activity activity in activities) 
         {
